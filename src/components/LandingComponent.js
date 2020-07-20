@@ -10,7 +10,7 @@ export default function LandingComponent() {
       direction="row-reverse"
       justify="space-around"
       alignItems="center"
-      style={{ height: '95vh' }}
+      style={{ height: '100vh' }}
     >
       <Grid xs={10} md={4} justify="center" container item>
         <TuringhutLogo style={{ maxWidth: '100%' }} />
