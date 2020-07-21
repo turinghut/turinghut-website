@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@keyframes showTopText {
+    0% { transform: translate(0, 100%); }
+    100% { transform: translate(0, 0); }
+}
+@keyframes showBottomText {
+    0% { transform: translate(0, -100%); }
+    100% { transform: translate(0, 0); }
+}
+.layout > div {
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.layout > div div {
+    padding: 2vmin 0;
+    position: relative;
+}
+.layout > div.title {
+    top: 0;
+}
+.layout > div.title div {
+    animation: translateY(100%);
+    animation: showTopText 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+
+.layout > div.body {
+    bottom: 0;
+}
+.layout > div.body div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+}
+
