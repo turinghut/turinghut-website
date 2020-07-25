@@ -24,7 +24,7 @@ export default function VisionMissionLayout(props) {
   return (
     <div className="layout">
         <div className="title">
-            <div><Typography variant="h1" className={classes.title}>{props.title}</Typography></div>
+            <div><Typography variant="h2" className={classes.title}>{props.title}</Typography></div>
         </div>
         <div className={classes.border}></div>
         <div className="body">
