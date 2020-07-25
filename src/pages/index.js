@@ -1,5 +1,10 @@
 import React from 'react'
+import Footer from '../components/footer/footer'
 
-const IndexPage = () => <h1>Hello world!</h1>
+const IndexPage = () => (
+  <main>
+    <Footer></Footer>
+  </main>
+)
 
 export default IndexPage
