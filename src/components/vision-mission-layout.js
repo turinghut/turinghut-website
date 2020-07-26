@@ -1,6 +1,5 @@
 import React, {useRef} from 'react'
 import { Typography, makeStyles } from '@material-ui/core'
-import './VisionMissionStyles.css'
 
 const useStyles = makeStyles({
   '@keyframes showTopText': {

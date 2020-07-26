@@ -5,7 +5,7 @@ import {
   responsiveFontSizes,
   ThemeProvider,
 } from '@material-ui/core'
-import VisionMissionLayout from './VisionMissionLayout'
+import VisionMissionLayout from './vision-mission-layout'
 
 let theme = createMuiTheme()
 theme = responsiveFontSizes(theme)
