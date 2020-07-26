@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core'
 
 import TuringhutLogo from '../assets/TuringhutLogo.svg'
 
-export default function LandingComponent() {
+export default function Landing() {
   return (
     <Grid
       container

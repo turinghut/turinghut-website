@@ -1,9 +1,9 @@
 import React from 'react'
-import LandingComponent from '../components/LandingComponent'
+import Landing from '../components/landing'
 
 const IndexPage = () => (
   <div>
-    <LandingComponent />
+    <Landing />
   </div>
 )
 
