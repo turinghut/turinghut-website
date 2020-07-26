@@ -56,6 +56,7 @@ const useStyles = makeStyles({
       position: 'relative',
       width: '100%',
     },
+    paddingBottom: "2vmin",
   },
 })
 
