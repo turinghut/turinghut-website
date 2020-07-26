@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { Typography, makeStyles } from '@material-ui/core'
 import './VisionMissionStyles.css'
 
@@ -17,17 +17,23 @@ const useStyles = makeStyles({
     fontFamily: "'Catamaran', sans-serif",
     textTransform: 'uppercase',
     bottom: 0,
-    animation: '$showTopText 1s 0.25s forwards',
     transform: 'translate(0, 100%)',
+  },
+
+  animTitle: {
+    animation: '$showTopText 1s 0.25s forwards',
   },
 
   body: {
     fontFamily: "'Roboto', sans-serif",
     fontSize: 15,
     top: 0,
-    animation: '$showBottomText 1s 0.25s forwards',
     transform: 'translate(0, -100%)',
     paddingTop: '2vmin',
+  },
+
+  animBody: {
+    animation: '$showBottomText 1s 0.25s forwards',
   },
 
   border: {
@@ -55,17 +61,28 @@ const useStyles = makeStyles({
 
 export default function VisionMissionLayout({ title, body }) {
   const classes = useStyles()
+  const refTitle = useRef(null)
+  const refBody = useRef(null)
+  const refLayout = useRef(null)
+
+  window.addEventListener("scroll", (e)=>{
+    const offset = refLayout.current.offsetTop*(30/100)
+    if(document.documentElement.scrollTop > offset){
+      refTitle.current.classList.add(classes.animTitle)
+      refBody.current.classList.add(classes.animBody)        
+    }
+  })
 
   return (
-    <div className={classes.layout}>
+    <div className={classes.layout} ref={refLayout}>
       <div className={classes.titleDiv}>
-        <Typography variant="h2" className={classes.title}>
+        <Typography variant="h2" className={classes.title} ref={refTitle}>
           {title}
         </Typography>
       </div>
       <div className={classes.border} />
       <div className={classes.bodyDiv}>
-        <Typography variant="body1" className={classes.body}>
+        <Typography variant="body1" className={classes.body} ref={refBody}>
           {body}
         </Typography>
       </div>
