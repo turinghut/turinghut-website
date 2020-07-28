@@ -1,5 +1,6 @@
 import React from 'react'
+import { Events } from './components/Events'
 
-const IndexPage = () => <h1>Hello world!</h1>
+const IndexPage = () => <div align="center"><h2>Hey there</h2><Events /></div>
 
 export default IndexPage
