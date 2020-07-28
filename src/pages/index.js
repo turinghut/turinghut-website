@@ -1,8 +1,8 @@
-import React from 'react'
-import TeamMemberComponent from '../components/TeamMemberComponent'
+import React from 'react';
+import TeamMember from '../components/TeamMember';
 const IndexPage = () => (
     <div>
-        <TeamMemberComponent />
+        <TeamMember />
     </div>
 )
 

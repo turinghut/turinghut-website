@@ -3,128 +3,128 @@
         {
             "name": "1",
             "designation": "Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/abcdef",
-            "linkedin": "linkedin.com/in/abcdef",
-            "phonenNo": "9898989898",
-            "emailid": "abcdef@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "github.com/abcdef",
+            "linkedinProfile": "linkedin.com/in/abcdef",
+            "phoneNumber": "9898989898",
+            "emailId ": "a.bcefdfghijklmnpqr@gmail.com"
         },
         {
             "name": "2",
             "designation": "Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/pqrst",
-            "linkedin": "linkedin.com/in/pqrst",
-            "phonenNo": "9898989898",
-            "emailid": "pqrst@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "https://github.com/reactjs/react-modal",
+            "linkedinProfile": "linkedin.com/in/pqrst",
+            "phoneNumber": "9898989898",
+            "emailId ": "pqrst@gmail.com"
         },
         {
             "name": "3",
             "designation": "Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/abcdef",
-            "linkedin": "linkedin.com/in/abcdef",
-            "phonenNo": "9898989898",
-            "emailid": "abcdef@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "github.com/abcdef",
+            "linkedinProfile": "linkedin.com/in/abcdef",
+            "phoneNumber": "9898989898",
+            "emailId ": "a.bcefdfghijklmnpqr@gmail.com"
         },
         {
             "name": "4",
             "designation": "Co-Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/pqrst",
-            "linkedin": "linkedin.com/in/pqrst",
-            "phonenNo": "9898989898",
-            "emailid": "pqrst@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "https://github.com/reactjs/react-modal",
+            "linkedinProfile": "linkedin.com/in/pqrst",
+            "phoneNumber": "9898989898",
+            "emailId ": "pqrst@gmail.com"
         },
         {
             "name": "5",
             "designation": "Co-Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/abcdef",
-            "linkedin": "linkedin.com/in/abcdef",
-            "phonenNo": "9898989898",
-            "emailid": "abcdef@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "github.com/abcdef",
+            "linkedinProfile": "linkedin.com/in/abcdef",
+            "phoneNumber": "9898989898",
+            "emailId ": "a.bcefdfghijklmnpqr@gmail.com"
         },
         {
             "name": "6",
             "designation": "President",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/pqrst",
-            "linkedin": "linkedin.com/in/pqrst",
-            "phonenNo": "9898989898",
-            "emailid": "pqrst@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "https://github.com/reactjs/react-modal",
+            "linkedinProfile": "linkedin.com/in/pqrst",
+            "phoneNumber": "9898989898",
+            "emailId ": "pqrst@gmail.com"
         },
         {
             "name": "7",
             "designation": "Member",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/abcdef",
-            "linkedin": "linkedin.com/in/abcdef",
-            "phonenNo": "9898989898",
-            "emailid": "abcdef@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "github.com/abcdef",
+            "linkedinProfile": "linkedin.com/in/abcdef",
+            "phoneNumber": "9898989898",
+            "emailId ": "a.bcefdfghijklmnpqr@gmail.com"
         },
         {
             "name": "8",
             "designation": "Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/pqrst",
-            "linkedin": "linkedin.com/in/pqrst",
-            "phonenNo": "9898989898",
-            "emailid": "pqrst@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "https://github.com/reactjs/react-modal",
+            "linkedinProfile": "linkedin.com/in/pqrst",
+            "phoneNumber": "9898989898",
+            "emailId ": "pqrst@gmail.com"
         },
         {
             "name": "9",
             "designation": "Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/abcdef",
-            "linkedin": "linkedin.com/in/abcdef",
-            "phonenNo": "9898989898",
-            "emailid": "abcdef@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "github.com/abcdef",
+            "linkedinProfile": "linkedin.com/in/abcdef",
+            "phoneNumber": "9898989898",
+            "emailId ": "a.bcefdfghijklmnpqr@gmail.com"
         },
         {
             "name": "10",
             "designation": "Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/pqrst",
-            "linkedin": "linkedin.com/in/pqrst",
-            "phonenNo": "9898989898",
-            "emailid": "pqrst@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "https://github.com/reactjs/react-modal",
+            "linkedinProfile": "linkedin.com/in/pqrst",
+            "phoneNumber": "9898989898",
+            "emailId ": "pqrst@gmail.com"
         },
         {
             "name": "11",
             "designation": "Co-Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/abcdef",
-            "linkedin": "linkedin.com/in/abcdef",
-            "phonenNo": "9898989898",
-            "emailid": "abcdef@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "github.com/abcdef",
+            "linkedinProfile": "linkedin.com/in/abcdef",
+            "phoneNumber": "9898989898",
+            "emailId ": "a.bcefdfghijklmnpqr@gmail.com"
         },
         {
             "name": "12",
             "designation": "Co-Founder",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/pqrst",
-            "linkedin": "linkedin.com/in/pqrst",
-            "phonenNo": "9898989898",
-            "emailid": "pqrst@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "https://github.com/reactjs/react-modal",
+            "linkedinProfile": "linkedin.com/in/pqrst",
+            "phoneNumber": "9898989898",
+            "emailId ": "pqrst@gmail.com"
         },
         {
             "name": "13",
             "designation": "President",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/abcdef",
-            "linkedin": "linkedin.com/in/abcdef",
-            "phonenNo": "9898989898",
-            "emailid": "abcdef@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "github.com/abcdef",
+            "linkedinProfile": "linkedin.com/in/abcdef",
+            "phoneNumber": "9898989898",
+            "emailId ": "a.bcefdfghijklmnpqr@gmail.com"
         },
         {
             "name": "14",
             "designation": "Member",
-            "img": "https://source.unsplash.com/random/200x200",
-            "githublink": "github.com/pqrst",
-            "linkedin": "linkedin.com/in/pqrst",
-            "phonenNo": "9898989898",
-            "emailid": "pqrst@gmail.com"
+            "imageUrl": "https://source.unsplash.com/random/200x200",
+            "githubProfile": "https://github.com/reactjs/react-modal",
+            "linkedinProfile": "linkedin.com/in/pqrst",
+            "phoneNumber": "9898989898",
+            "emailId ": "pqrst@gmail.com"
         }
     ]
 }

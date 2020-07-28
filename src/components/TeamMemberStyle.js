@@ -1,5 +1,5 @@
-const styles = (theme) => {
-    return ({
+import { makeStyles } from '@material-ui/core/styles';
+const styles =makeStyles(theme => ({
         heading: {
             fontFamily: "'Catamaran', sans-serif",
             textTransform: "uppercase",
@@ -10,7 +10,7 @@ const styles = (theme) => {
             display: 'flex',
             flexWrap: 'wrap',
         },
-        gridContainer: {
+        "grid-container": {
             justifyContent: 'spacing-around',
             spacing: '5',
             margin: '2vh'
@@ -25,10 +25,27 @@ const styles = (theme) => {
             color: '#000000',
             boxShadow: 'none'
         },
-        dialogHeading: {
+        "dialog-heading": {
             fontFamily: "'Catamaran', sans-serif",
             textTransform: "uppercase",
             textAlign: "center",
+        },
+        "dialog-content" :{
+            fontFamily:"'Times New Roman'",
+            color: '#000000',
+            fontSize: '2rem'
+        },
+        "github-icon" :{
+            fontSize: 30,
+            marginTop: '2vh',
+            marginLeft: '3vw',
+            color: '#000000'
+        },
+        "linkedin-icon" :{
+            fontSize: 32,
+            marginTop: '2vh',
+            marginLeft: '1.5vw',
+            color: 'blue'
         },
         tilebar: {
             left: 0,
@@ -40,14 +57,14 @@ const styles = (theme) => {
             alignItems: 'center',
             fontFamily: "'Roboto', 'Helvetica', 'Arial', 'sans-serif'"
         },
-        tilebarBottom: {
+        "tilebar-bottom": {
             bottom: '0vh'
         },
-        tilebarRootTitle: {
+        "tilebar-root-title": {
             height: '10vh'
         },
 
-        titleWrap: {
+        "title-wrap": {
             color: '#fff',
             overflow: 'hidden',
             flexGrow: 1,
@@ -55,7 +72,7 @@ const styles = (theme) => {
             marginRight: '2vh'
         },
 
-        titlePosRight: {
+        "title-pos-right": {
             marginRight: 0
         },
         title: {
@@ -65,7 +82,7 @@ const styles = (theme) => {
             whiteSpace: '',
             textOverflow: 'ellipsis'
         },
-        actionItem: {
+        "action-item": {
             marginRight: '1vh',
             color: '#fff'
         },
@@ -76,13 +93,10 @@ const styles = (theme) => {
             backgroundColor: 'transparent',
             width: '100%'
         },
-        cardContent: {
-            backgroundColor: 'transparent'
-        },
         backdrop: {
             backgroundColor: 'transparent',
             boxShadow: 'none'
         }
     })
-};
+);
 export default styles;
