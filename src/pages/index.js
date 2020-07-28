@@ -1,5 +1,10 @@
 import React from 'react'
+import Statistics from '../components/statistics'
 
-const IndexPage = () => <h1>Hello world!</h1>
+const IndexPage = () => (
+  <div>
+    <Statistics />
+  </div>
+)
 
 export default IndexPage
