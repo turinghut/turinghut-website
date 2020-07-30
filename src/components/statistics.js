@@ -1,55 +1,27 @@
 import React from "react"
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid, Paper, Typography, Container } from '@material-ui/core';
 import CountUp from 'react-countup';
-const useStyles = makeStyles((theme) => ({
-    paper: {
-        padding: theme.spacing(1),
-        textAlign: 'center',
-
-    },
-    val: {
-        fontSize: '100px'
-    },
-    name: {
-        fontSize: '30px'
-    },
-    grid: {
-        paddingRight: '100px',
-        paddingLeft: '100px'
-    }
-
-}))
-
+import StatisticStyle from './statistics-style';
+import Stats from '../assets/stats.json';
 export default function Statistics() {
-
-    const classes = useStyles();
+    const statistics = Stats.statistics;
+    const classes = StatisticStyle();
     return (
-        <Grid container spacing={3} className={classes.grid}>
-            <Grid item xs={12} lg={3} md={3} sm={6}>
-                <Paper className={classes.paper}>
-                    <h1><CountUp end={72} className={classes.val} /></h1>
-                    <p className={classes.name}>Club Members</p>
-                </Paper>
+        <Container>
+            <Grid container spacing={3} >
+                {
+                    statistics.map((statistics, i) =>
+                        (
+                            <Grid item xs={12} lg={3} md={3} sm={6} key={i}>
+                                <Paper className={classes.paper} elevation={3}>
+                                    <Typography variant="h2" component="h1"><CountUp end={statistics.value} duration={3} className={classes.val} /></Typography>
+                                    <Typography variant="h5" className={classes.name} >{statistics.name}</Typography>
+                                </Paper>
+                            </Grid>
+                        ))
+
+                }
             </Grid>
-            <Grid item xs={12} lg={3} md={3} sm={6}>
-                <Paper className={classes.paper}>
-                    <h1><CountUp end={7} className={classes.val} /></h1>
-                    <p className={classes.name}>Participations</p>
-                </Paper>
-            </Grid>
-            <Grid item xs={12} lg={3} md={3} sm={6}>
-                <Paper className={classes.paper}>
-                    <h1><CountUp end={15} className={classes.val} /></h1>
-                    <p className={classes.name}>Hosted Contests</p>
-                </Paper>
-            </Grid>
-            <Grid item xs={12} lg={3} md={3} sm={6}>
-                <Paper className={classes.paper}>
-                    <h1><CountUp end={48} className={classes.val} /></h1>
-                    <p className={classes.name}>Sessions</p>
-                </Paper>
-            </Grid>
-        </Grid>
+        </Container>
     )
 }
