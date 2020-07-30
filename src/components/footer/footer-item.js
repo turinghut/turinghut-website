@@ -2,13 +2,13 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 
-const FooterItem = props => {
+const FooterItem = ({ name, icons }) => {
   return (
     <Grid item xs={4}>
       <Typography variant="h6" component="h6">
-        {props.name}
+        {name}
       </Typography>
-      <IconList icons={props.icons}></IconList>
+      <IconList icons={icons}></IconList>
     </Grid>
   )
 }

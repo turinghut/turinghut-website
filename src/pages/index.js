@@ -3,7 +3,7 @@ import Footer from '../components/footer/footer'
 
 const IndexPage = () => (
   <main>
-    <Footer></Footer>
+    <Footer />
   </main>
 )
 

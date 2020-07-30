@@ -70,7 +70,7 @@ const Footer = () => {
       <Paper className={styles.paper}>
         <Grid container spacing={2} justify="center" alignItems="center">
           {footerItems.map(item => (
-            <FooterItem name={item.title} icons={item.icons}></FooterItem>
+            <FooterItem name={item.title} icons={item.icons} />
           ))}
           <Grid item xs={12}>
             <Typography component="paragraph">
