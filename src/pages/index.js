@@ -1,5 +1,10 @@
 import React from 'react'
+import Landing from '../components/landing'
 
-const IndexPage = () => <h1>Hello world!</h1>
+const IndexPage = () => (
+  <div>
+    <Landing />
+  </div>
+)
 
 export default IndexPage
