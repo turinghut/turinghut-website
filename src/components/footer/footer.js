@@ -4,14 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import footerStyles from './footer-styles'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
-import {
-  Map,
-  GitHub,
-  Facebook,
-  Instagram,
-  Email,
-  LocalPhone,
-} from '@material-ui/icons'
+import { Map, GitHub, Instagram, Email, LocalPhone } from '@material-ui/icons'
 
 import FooterItem from './footer-item'
 
@@ -50,11 +43,6 @@ const footerItems = [
         route: 'https://github.com/turinghut',
       },
       {
-        title: 'facebook',
-        icon: <Facebook />,
-        route: '#', //replace with facebook link
-      },
-      {
         title: 'instagram',
         icon: <Instagram />,
         route: 'https://www.instagram.com/turing.hut/',
@@ -64,7 +52,7 @@ const footerItems = [
 ]
 
 const Footer = () => {
-  const styles = footerStyles();
+  const styles = footerStyles()
   return (
     <footer className={styles.footer}>
       <Paper className={styles.paper}>

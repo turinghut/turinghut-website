@@ -1,6 +1,7 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+import IconButton from '@material-ui/core/IconButton'
 
 const FooterItem = ({ name, icons }) => {
   return (
@@ -19,7 +20,14 @@ const IconList = props => {
       {props.icons.map(({ title, icon, route }) => (
         <Grid item xs>
           <a href={route} alt={title}>
-            {icon}
+            <IconButton
+              style={{
+                borderRadius: '50%',
+                backgroundColor: 'primary',
+              }}
+            >
+              {icon}
+            </IconButton>
           </a>
         </Grid>
       ))}
