@@ -1,10 +1,12 @@
 import React from 'react'
 import Footer from '../components/footer/footer'
+import Landing from '../components/landing'
 
 const IndexPage = () => (
-  <main>
+  <div>
+    <Landing />
     <Footer />
-  </main>
+  </div>
 )
 
 export default IndexPage
