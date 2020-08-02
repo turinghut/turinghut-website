@@ -1,5 +1,11 @@
 import React from "react"
 
-const IndexPage = () => <h1>Hello world!</h1>
+import HamburgerMenu from "../components/hamburger-menu"
 
-export default IndexPage
+export default function About() {
+    return (
+      <div >
+        <HamburgerMenu/>
+      </div>
+    )
+  }
