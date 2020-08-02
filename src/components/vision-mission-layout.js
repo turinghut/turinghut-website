@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import { Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
@@ -13,18 +13,17 @@ const useStyles = makeStyles({
   },
 
   title: {
-    fontFamily: "'Catamaran', sans-serif",
+    fontWeight: "bold",
     textTransform: 'uppercase',
     bottom: 0,
     transform: 'translate(0, 100%)',
   },
 
   animTitle: {
-    animation: '$showTopText 1s 0.25s forwards',
+    animation: '$showTopText 1s 0.15s forwards',
   },
 
   body: {
-    fontFamily: "'Roboto', sans-serif",
     fontSize: 15,
     top: 0,
     transform: 'translate(0, -100%)',
@@ -60,29 +59,29 @@ const useStyles = makeStyles({
 })
 
 export default function VisionMissionLayout({ title, body }) {
-  const classes = useStyles()
-  const refTitle = useRef(null)
-  const refBody = useRef(null)
-  const refLayout = useRef(null)
+  const classes = useStyles();
+  const refLayout = useRef(null);
+  const [titleAnimation, setTitleAnimation] = useState(null);
+  const [bodyAnimation, setBodyAnimation] = useState(null);
 
   window.addEventListener("scroll", (e)=>{
     const offset = refLayout.current.offsetTop*(30/100)
     if(document.documentElement.scrollTop > offset){
-      refTitle.current.classList.add(classes.animTitle)
-      refBody.current.classList.add(classes.animBody)        
+      setTitleAnimation(classes.animTitle);
+      setBodyAnimation(classes.animBody);     
     }
   })
 
   return (
     <div className={classes.layout} ref={refLayout}>
       <div className={classes.titleDiv}>
-        <Typography variant="h2" className={classes.title} ref={refTitle}>
+        <Typography variant="h2" className={`${classes.title} ${titleAnimation}`}>
           {title}
         </Typography>
       </div>
       <div className={classes.border} />
       <div className={classes.bodyDiv}>
-        <Typography variant="body1" className={classes.body} ref={refBody}>
+        <Typography variant="body1" className={`${classes.body} ${bodyAnimation}`}>
           {body}
         </Typography>
       </div>
