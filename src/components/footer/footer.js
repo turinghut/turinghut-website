@@ -22,7 +22,7 @@ const footerItems = [
       {
         title: 'Maps',
         icon: <Map />,
-        route: 'www.google.com',
+        route: 'https://goo.gl/maps/KbMkmqUWmUVQpfCv9',
       },
     ],
   },
@@ -32,12 +32,12 @@ const footerItems = [
       {
         title: 'Email',
         icon: <Email />,
-        route: 'www.google.com',
+        route: 'mailto:turinghut@vnrvjiet.in',
       },
       {
         title: 'Phone',
         icon: <LocalPhone />,
-        route: 'www.google.com',
+        route: 'tel: 040-2304-2760',
       },
     ],
   },
@@ -64,12 +64,12 @@ const footerItems = [
 ]
 
 const Footer = () => {
-  const styles = footerStyles()
+  const styles = footerStyles();
   return (
     <footer className={styles.footer}>
       <Paper className={styles.paper}>
         <Grid container spacing={2} justify="center" alignItems="center">
-          {footerItems.map(item => (
+          {footerItems.map((item, key) => (
             <FooterItem name={item.title} icons={item.icons} />
           ))}
           <Grid item xs={12}>
