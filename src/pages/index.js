@@ -5,7 +5,7 @@ import {
   ThemeProvider,
 } from '@material-ui/core'
 import Landing from '../components/landing'
-import VisionMissionComponent from '../components/VisionMissionComponent'
+import VisionMissionComponent from '../components/vision-mission-component'
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
