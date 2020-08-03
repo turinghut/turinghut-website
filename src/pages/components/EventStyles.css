@@ -1,0 +1,91 @@
+.eventTab{
+    overflow-x: hidden;
+    overflow-y: hidden ;
+}
+
+
+.eventImage{
+  height: 80%;
+  width: 100%;
+}
+
+.upcomingEventTitle{
+  margin: 40px;
+}
+
+.upcomingEventTab{
+  bottom:0;
+}
+
+.upcomingEventPaper{
+  position: relative;
+  width: 50%;
+}
+
+.upcomingEventTextOuter{
+margin-top: 35%;
+background-color: white;
+height: 50%;
+width: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+opacity: 1;
+}
+
+.eventsComponent{
+  overflow-X: hidden;
+  overflow-Y:hidden;
+}
+
+.upcomingEventTextInner{
+  text-align: center;
+  position: absolute; 
+  margin-top: 5%; 
+  top: 0%;
+  left: 50%; 
+  transform: translate(-50%, 0%);
+}
+.eventPaper{
+  position: relative;
+}
+.details{
+  background-color: white;
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+.eventText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.upcomingEventImage{
+  height: auto;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .eventdetailsP {
+      font-size: 8px;
+    }
+    .eventdetailsH2{
+        font-size: 12px;
+      }
+      .eventdetailsH1 {
+        font-size: 12px;
+      }
+  }
+  
