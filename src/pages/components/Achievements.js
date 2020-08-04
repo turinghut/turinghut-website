@@ -1,47 +1,25 @@
 import React from 'react' ;
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Grid} from '@material-ui/core'
+import { Grid , Typography} from '@material-ui/core'
 import * as icons from '@material-ui/icons'
-
+import TuringHutAchievements from './data' 
 
 export default function Achievements()
 {
     
-    let  TuringHutAchievements  = [
-        {
-            title:"Title",
-            tagline:"tagline...",
-            description:"Description...",
-            date:"20 Jul 2020",  
-            imageAddress:"https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg"
-        },
-        {
-            title:"ACM ICPC 2019",
-            tagline:"tagline...",
-            description:"Description...", 
-            date:"20 Jul 2020", 
-            imageAddress:"https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg"
-        },
-        {
-            title:"ACM ICPC 2019",
-            tagline:"tagline...",
-            description:"Description...",
-            date:"20 Jul 2020",  
-            imageAddress:"https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg"
-        }
-    ]
+   
     return(
         <VerticalTimeline animate={true} >
-            {TuringHutAchievements.map((eachAchievement)=>{
+            {TuringHutAchievements.map((achievement)=>{
                 return (
                     <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#0C251B', color: 'black' }}
                 contentArrowStyle={{ borderRight: '7px solid  #0C251B' }}
-                date = {eachAchievement.date}
+                date = {achievement.date}
                 iconStyle={{ background: '#0C251B', color: '#fff' ,                                                         }}
-                icon = {<icons.Image />}
+                icon = {<icons.Group  />}
                 
                 > 
                 <Grid
@@ -51,15 +29,15 @@ export default function Achievements()
                 spacing= {3}
                 >
                     <Grid xs={12} md={5} justify="flex-start" alignItems="center" container item style={{backgroundColor:""}} >
-                    {/* Random Image */}
-                    <img src= {eachAchievement.imageAddress}
+                    <img src= {achievement.imageUrl}
                         style={{maxWidth:"160px", margin:"10px" , minHeight:"200px"}} ></img>
                     </Grid>
-                    <Grid xs={12} md={7} container item justify="flex-start"  style={{backgroundColor:"" , marginBottom:"10px", color:"#fff" }}> 
+                    <Grid xs={12} md={7} container item justify="flex-start"  style={{ marginBottom:"10px", color:"#fff" }}> 
                           <ul style={{listStyle:"none" , padding:"0px" }}>
-                           <li><h3 className="vertical-timeline-element-title">{eachAchievement.title}</h3></li>
-                           <li><h5 className="vertical-timeline-element-subtitle">{eachAchievement.tagline}</h5></li> 
-                           <li><p>{eachAchievement.description}</p></li>
+                           <li><Typography variant='h4' component="h3" className= "vertical-timeline-element-title" >{achievement.title}</Typography></li>
+                           
+                           <li><Typography variant='h7' component="h7" className= "vertical-timeline-element-title">{achievement.tagline}</Typography></li> 
+                           <li><Typography variant='p' className= "vertical-timeline-element-title" component ="p">{achievement.description}</Typography></li>
                           </ul>                      
                             
                     </Grid>
