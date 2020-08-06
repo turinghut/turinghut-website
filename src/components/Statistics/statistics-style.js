@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
 
     name: {
         fontFamily: "RaleWay",
-        marginTop: '10px'
+        marginTop: '2vh'
     },
     val: {
         fontWeight: 'bold'

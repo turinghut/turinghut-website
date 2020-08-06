@@ -2,24 +2,24 @@ import React from "react"
 import { Grid, Paper, Typography, Container } from '@material-ui/core';
 import CountUp from 'react-countup';
 import StatisticStyle from './statistics-style';
-import Stats from '../assets/stats.json';
+import data from './statistics-data';
 export default function Statistics() {
-    const statistics = Stats.statistics;
     const classes = StatisticStyle();
     return (
         <Container>
             <Grid container spacing={3} >
                 {
-                    statistics.map((statistics, i) =>
+                    data.map((statistics) =>
                         (
-                            <Grid item xs={12} lg={3} md={3} sm={6} key={i}>
+                        <Grid item xs={12} lg={3} md={3} sm={6} key={statistics.id} >
                                 <Paper className={classes.paper} elevation={3}>
-                                    <Typography variant="h2" component="h1"><CountUp end={statistics.value} duration={3} className={classes.val} /></Typography>
+                                   
+                                    <img src={statistics.url} height="100" width="100"/>
+                                    <Typography variant="h2" component="h1"><CountUp end={parseInt(statistics.value)} duration={3} className={classes.val} /></Typography>
                                     <Typography variant="h5" className={classes.name} >{statistics.name}</Typography>
                                 </Paper>
                             </Grid>
-                        ))
-
+                    )  )
                 }
             </Grid>
         </Container>
