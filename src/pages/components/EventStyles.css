@@ -1,7 +1,4 @@
-.eventTab{
-    overflow-x: hidden;
-    overflow-y: hidden ;
-}
+
 
 
 .eventImage{
@@ -9,17 +6,18 @@
   width: 100%;
 }
 
-.upcomingEventTitle{
-  margin: 40px;
-}
+
 
 .upcomingEventTab{
   bottom:0;
+  margin-top: 200px;
+
 }
 
 .upcomingEventPaper{
   position: relative;
   width: 50%;
+  overflow:hidden;
 }
 
 .upcomingEventTextOuter{
@@ -32,12 +30,10 @@ top: 0;
 bottom: 0;
 right: 0;
 left: 0;
-opacity: 1;
 }
 
 .eventsComponent{
-  overflow-X: hidden;
-  overflow-Y:hidden;
+  overflow:hidden;
 }
 
 .upcomingEventTextInner{
@@ -50,6 +46,7 @@ opacity: 1;
 }
 .eventPaper{
   position: relative;
+  overflow:hidden;
 }
 .details{
   background-color: white;
@@ -60,7 +57,6 @@ opacity: 1;
   bottom: 0; 
   right: 0;
   left: 0;
-  opacity: 1;
 }
 .eventText{
   position: absolute;
@@ -77,15 +73,3 @@ opacity: 1;
 }
 
 
-@media only screen and (max-width: 768px) {
-    .eventdetailsP {
-      font-size: 8px;
-    }
-    .eventdetailsH2{
-        font-size: 12px;
-      }
-      .eventdetailsH1 {
-        font-size: 12px;
-      }
-  }
-  
