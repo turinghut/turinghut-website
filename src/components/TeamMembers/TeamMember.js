@@ -13,7 +13,7 @@ export default function TeamMember() {
     <div>
       <Typography variant="h3" className={classes.heading}>our team</Typography>
       <div className={classes.root}>
-        <Grid container spacing={4} className={classes["grid-container"]}>
+        <Grid container spacing={4} className={classes.gridContainer}>
           {team.map((member, i) => (
             <Grid item xs={12} md={4} key={i}>
               <Card className={classes.card}>
