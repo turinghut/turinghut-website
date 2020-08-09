@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Grid, Paper, Slide } from '@material-ui/core'
-import "./EventStyles.css";
 import EventsData from "./EventsData.json";
 import Typography from '@material-ui/core/Typography';
 import styles from "./EventStyles.js";

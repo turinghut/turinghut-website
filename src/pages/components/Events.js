@@ -1,6 +1,5 @@
 import React from "react";
 import { EventsList, EventTab } from "./EventsComps";
-import "./EventStyles.css";
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import EventsData from "./EventsData.json";
