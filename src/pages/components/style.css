@@ -1,0 +1,24 @@
+.scroller-notrack::-webkit-scrollbar {
+    width : .6em ; 
+    height: 0.4em;
+  }
+
+.scroller-notrack::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+   
+  }
+   
+.scroller-notrack::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    
+  }
+
+.AchievementDiv
+{
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 50px;
+
+}

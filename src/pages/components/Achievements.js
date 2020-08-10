@@ -3,15 +3,16 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { Grid , Typography} from '@material-ui/core'
 import * as icons from '@material-ui/icons'
-import TuringHutAchievements from './data' 
-
+import TuringHut from './data.json' 
+import "./style.css" ; 
 export default function Achievements()
 {
     
    
     return(
-        <VerticalTimeline animate={true} >
-            {TuringHutAchievements.map((achievement)=>{
+        <div className = "AchievementDiv scroller-notrack" >
+            <VerticalTimeline animate={true}   >
+            {TuringHut.TuringHutAchievements.map((achievement)=>{
                 return (
                     <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -30,7 +31,7 @@ export default function Achievements()
                 >
                     <Grid xs={12} md={5} justify="flex-start" alignItems="center" container item style={{backgroundColor:""}} >
                     <img src= {achievement.imageUrl}
-                        style={{maxWidth:"160px", margin:"10px" , minHeight:"200px"}} ></img>
+                        style={{maxWidth:"130px", margin:"10px", mixHeight:"200px"}} ></img>
                     </Grid>
                     <Grid xs={12} md={7} container item justify="flex-start"  style={{ marginBottom:"10px", color:"#fff" }}> 
                           <ul style={{listStyle:"none" , padding:"0px" }}>
@@ -48,5 +49,7 @@ export default function Achievements()
                 ) ;
             })}
         </VerticalTimeline>
+        </div>
+        
     )
 }
