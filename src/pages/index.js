@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   createMuiTheme,
   responsiveFontSizes,
@@ -7,6 +7,8 @@ import {
 import Landing from '../components/landing'
 import Statistics from '../components/Statistics/statistics';
 import VisionMissionComponent from '../components/vision-mission-component'
+import Footer from '../components/footer/footer'
+
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -14,8 +16,9 @@ theme = responsiveFontSizes(theme);
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <Landing />
-    <Statistics />
     <VisionMissionComponent />
+    <Statistics />
+    <Footer />
   </ThemeProvider>
 )
 
