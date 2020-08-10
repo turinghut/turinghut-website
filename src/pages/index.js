@@ -1,11 +1,22 @@
 import React from 'react';
-import Statistics from '../components/Statistics/statistics';
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+} from '@material-ui/core'
 import Landing from '../components/landing'
+import Statistics from '../components/Statistics/statistics';
+import VisionMissionComponent from '../components/vision-mission-component'
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
+
 const IndexPage = () => (
-  <div>
+  <ThemeProvider theme={theme}>
     <Landing />
     <Statistics />
-  </div>
+    <VisionMissionComponent />
+  </ThemeProvider>
 )
 
 export default IndexPage
