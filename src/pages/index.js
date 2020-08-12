@@ -1,12 +1,27 @@
-import React from 'react';
-import TeamMember from '../components/TeamMembers/TeamMember';
-import Landing from '../components/landing';
+import React from 'react'
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+} from '@material-ui/core'
+import Landing from '../components/landing'
+import Statistics from '../components/Statistics/statistics';
+import VisionMissionComponent from '../components/vision-mission-component'
+import Footer from '../components/footer/footer'
+import TeamMember from '../components/TeamMembers/team-member';
+
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 const IndexPage = () => (
-  <div>
+  <ThemeProvider theme={theme}>
     <Landing />
+    <VisionMissionComponent />
+    <Statistics />
     <TeamMember />
-  </div>
+    <Footer />
+  </ThemeProvider>
 )
 
 export default IndexPage

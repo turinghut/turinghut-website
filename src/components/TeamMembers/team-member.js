@@ -3,8 +3,8 @@ import {
   Grid, Typography, Card, CardActionArea, CardMedia
 } from '@material-ui/core';
 import TeamMembersData from "../../assets/TeamMembersData.json";
-import teamMemberStyles from "./TeamMemberStyle";
-import DialogDisplay from './TeamMemberDialogDisplay';
+import teamMemberStyles from "./team-member-style";
+import DialogDisplay from './team-member-dialog-display';
 const team = TeamMembersData.members;
 
 export default function TeamMember() {

@@ -6,6 +6,7 @@ const styles = makeStyles(theme => ({
         textTransform: "uppercase",
         color: '#000000',
         textAlign: "center",
+        marginTop: '4vh'
     },
     root: {
         display: 'flex',
@@ -16,36 +17,27 @@ const styles = makeStyles(theme => ({
         spacing: '5',
         margin: '2vh'
     },
-    dialog: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    paper: {
-        padding: theme.spacing(1, 3, 2),
-        color: '#000000',
-        boxShadow: 'none'
-    },
     dialogHeading: {
         fontFamily: "'Catamaran', sans-serif",
         textTransform: "uppercase",
         textAlign: "center",
-        fontSize: '40px'
+        color: '#000000',
+        fontSize: '1.5rem'
     },
     dialogContent: {
         fontFamily: "'Times New Roman'",
         color: '#000000',
-        fontSize: '30px'
+    },
+    icon:{
+        fontSize: '1.2rem'
     },
     githubIcon: {
-        fontSize: '30px',
-        marginTop: '2vh',
+        fontSize: '1.7rem',
         marginLeft: '3vw',
         color: '#000000'
     },
     linkedinIcon: {
-        fontSize: '32px',
-        marginTop: '2vh',
+        fontSize: '1.9rem',
         marginLeft: '1.5vw',
         color: 'blue'
     },

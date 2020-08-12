@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Dialog, Typography, CardActions } from '@material-ui/core';
-import teamMemberStyles from "./TeamMemberStyle";
+import { Dialog, CardActions, DialogContent, DialogContentText } from '@material-ui/core';
+import teamMemberStyles from "./team-member-style";
 import { LinkedIn, Mail, GitHub, LocalPhone, Info } from '@material-ui/icons';
 
 const DialogDisplay = ({ person: { name, designation, phoneNumber, emailId, githubProfile, linkedinProfile } }) => {
@@ -19,13 +19,13 @@ const DialogDisplay = ({ person: { name, designation, phoneNumber, emailId, gith
                 open={open}
                 onClose={() => { setOpen(false) }}
             >
-                <div className={classes.paper}>
-                    {name ? <Typography variant="h4" className={classes.dialogHeading}>{name}</Typography> : null}
-                    {phoneNumber ? <Typography variant="h5" className={classes.dialogContent}><LocalPhone /> {phoneNumber}</Typography> : null}
-                    {emailId ? <Typography variant="h5" className={classes.dialogContent}><Mail /> {emailId}</Typography> : null}
+                <DialogContent>
+                    {name ? <DialogContentText className={classes.dialogHeading}>{name}</DialogContentText> : null}
+                    {phoneNumber ? <DialogContentText className={classes.dialogContent}><LocalPhone className={classes.icon}/> {phoneNumber}</DialogContentText> : null}
+                    {emailId ? <DialogContentText className={classes.dialogContent}><Mail className={classes.icon}/> {emailId}</DialogContentText> : null}
                     {githubProfile ? <a href={githubProfile} alt={"githubProfile"} ><GitHub className={classes.githubIcon} /></a> : null}
                     {linkedinProfile ? <a href={linkedinProfile} alt={"linkedinProfile"}><LinkedIn className={classes.linkedinIcon} /></a> : null}
-                </div >
+                </DialogContent>
             </Dialog>
         </div>
     )
