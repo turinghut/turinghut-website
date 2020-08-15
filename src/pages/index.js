@@ -1,9 +1,9 @@
 import React from 'react'
 import Landing from '../components/landing'
-import Fullpagemenu from "../components/fullpagemenu"
+import HamburgerMenu from "../components/hamburger-menu"
 const IndexPage = () => (
   <div>
-    <Fullpagemenu/>
+    <HamburgerMenu/>
     <Landing />
   </div>
 )
