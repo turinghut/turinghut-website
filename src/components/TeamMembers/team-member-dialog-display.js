@@ -19,7 +19,7 @@ const DialogDisplay = ({ person: { name, designation, phoneNumber, emailId, gith
                 open={open}
                 onClose={() => { setOpen(false) }}
             >
-                <DialogContent>
+                <DialogContent style={{width:250}}>
                     {name ? <DialogContentText className={classes.dialogHeading}>{name}</DialogContentText> : null}
                     {phoneNumber ? <DialogContentText className={classes.dialogContent}><LocalPhone className={classes.icon}/> {phoneNumber}</DialogContentText> : null}
                     {emailId ? <DialogContentText className={classes.dialogContent}><Mail className={classes.icon}/> {emailId}</DialogContentText> : null}
