@@ -19,7 +19,6 @@ const styles = makeStyles(theme => ({
     },
     dialogHeading: {
         fontFamily: "'Catamaran', sans-serif",
-        textTransform: "uppercase",
         textAlign: "center",
         color: '#000000',
         fontSize: '1.5rem'
