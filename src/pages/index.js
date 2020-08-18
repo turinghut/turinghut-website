@@ -8,6 +8,7 @@ import Landing from '../components/landing'
 import Statistics from '../components/Statistics/statistics';
 import VisionMissionComponent from '../components/vision-mission-component'
 import Footer from '../components/footer/footer'
+import TeamMember from '../components/TeamMembers/team-member';
 
 
 let theme = createMuiTheme();
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Landing />
     <VisionMissionComponent />
     <Statistics />
+    <TeamMember />
     <Footer />
   </ThemeProvider>
 )

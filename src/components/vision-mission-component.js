@@ -7,7 +7,6 @@ export default function VisionMissionComponent() {
     <Grid
       container
       justify="space-around"
-      style={{ height: '100vh' }}
       alignItems="center"
     >
       <Grid item container xs={10} sm={8} justify="flex-start">
