@@ -6,9 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
-
-const drawerWidth = 240;
-
+const DRAWERWIDTH = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -21,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarShift: {
     width: `calc(100%)`,
-    marginLeft: drawerWidth,
+    marginLeft: DRAWERWIDTH,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
@@ -34,11 +32,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
   },
   drawer: {
-    // width: drawerWidth,
+    width:DRAWERWIDTH,
     flexShrink: 0,
   },
   drawerPaper: {
-    width: drawerWidth,
+    width: DRAWERWIDTH,
   },
   drawerHeader: {
     display: 'flex',
@@ -54,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    marginLeft: -drawerWidth,
+    marginLeft: -DRAWERWIDTH,
   },
   contentShift: {
     transition: theme.transitions.create('margin', {
@@ -64,24 +62,19 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
 }));
-
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-
   const handleDrawerOpen = () => {
     setOpen(true);
   };
-
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
   return (
     <div className={classes.root}>
       <CssBaseline />
-     
         <Toolbar>
           <IconButton
             color="inherit"
@@ -91,8 +84,7 @@ export default function PersistentDrawerLeft() {
             className={clsx(classes.menuButton, open && classes.hide)}
           >
             <MenuIcon />
-          </IconButton>
-         
+          </IconButton> 
         </Toolbar>
       <Drawer
         className={classes.drawer}
@@ -112,13 +104,11 @@ export default function PersistentDrawerLeft() {
         <List>
           {['Home', 'About Us', 'Achievements', 'Team','Events'].map((text) => (
             <ListItem button key={text}>
-             
               <ListItemText primary={text} />
             </ListItem>
           ))}
         </List>
       </Drawer>
-    
     </div>
   );
 }
