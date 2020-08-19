@@ -5,6 +5,7 @@ import TuringhutLogo from '../assets/TuringhutLogo.svg'
 
 export default function Landing() {
   return (
+    <div id="home">
     <Grid
       container
       direction="row-reverse"
@@ -22,5 +23,6 @@ export default function Landing() {
         </Typography>
       </Grid>
     </Grid>
+    </div>
   )
 }

@@ -54,6 +54,7 @@ const footerItems = [
 const Footer = () => {
   const styles = footerStyles()
   return (
+    <div id="footer"> 
     <footer className={styles.footer}>
       <Paper className={styles.paper}>
         <Grid container spacing={2} justify="center" alignItems="center">
@@ -68,6 +69,7 @@ const Footer = () => {
         </Grid>
       </Paper>
     </footer>
+    </div>
   )
 }
 

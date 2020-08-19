@@ -6,6 +6,7 @@ import data from './statistics-data';
 export default function Statistics() {
     const classes = StatisticStyle();
     return (
+        <div id="statistics"> 
         <Container>
             <Grid container spacing={3} >
                 {
@@ -23,5 +24,6 @@ export default function Statistics() {
                 }
             </Grid>
         </Container>
+        </div>
     )
 }
