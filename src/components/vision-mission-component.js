@@ -3,7 +3,8 @@ import {Grid}  from '@material-ui/core'
 import VisionMissionLayout from './vision-mission-layout'
 
 export default function VisionMissionComponent() {
-  return (    
+  return (   
+    <div id="vission">
     <Grid
       container
       justify="space-around"
@@ -27,5 +28,6 @@ export default function VisionMissionComponent() {
         </Grid>
       </Grid>
     </Grid>
+    </div>
   )
 }

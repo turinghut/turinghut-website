@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import {Drawer,CssBaseline,Toolbar,List,Divider,IconButton,ListItem,ListItemText} from '@material-ui/core';
+import {Drawer,CssBaseline,Toolbar,List,Divider,IconButton,ListItem,ListItemText,Link,Typography} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    position:'fixed',
   },
   hide: {
     display: 'none',
@@ -102,11 +103,31 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {['Home', 'About Us', 'Achievements', 'Team','Events'].map((text) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
+            <Link href="#home"> 
+            <ListItem button onClick={handleDrawerClose}>
+              <ListItemText primary={'Home'} />
             </ListItem>
-          ))}
+            </Link>
+            <Link href="#vission" onClick={handleDrawerClose}> 
+            <ListItem button >
+              <ListItemText primary={'About Us'} />
+            </ListItem>
+            </Link>
+            <Link href="#" onClick={handleDrawerClose}> 
+            <ListItem button >
+              <ListItemText primary={'Achievements'} />
+            </ListItem>
+            </Link>
+            <Link href="#statistics" onClick={handleDrawerClose}> 
+            <ListItem button >
+              <ListItemText primary={'Team'} />
+            </ListItem>
+            </Link>
+            <Link href="#" onClick={handleDrawerClose}> 
+            <ListItem button >
+              <ListItemText primary={'Events'} />
+            </ListItem>
+            </Link>
         </List>
       </Drawer>
     </div>
